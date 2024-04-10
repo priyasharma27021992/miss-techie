@@ -3,7 +3,7 @@ const Home = () => {
   return (
     <div className="h-screen bg-white dark:bg-gray-900">
       <div className="flex flex-col items-center justify-between rounded-lg m-auto h-full max-w-2xl px-4 py-16 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8 md:flex-row bg-gradient-to-r from-indigo-500 from-10% via-sky-500 via-30% to-emerald-500 to-90%">
-        <div className="flex flex-col p-15">
+        <div className="flex flex-col p-20">
           <p className="mb-4">Hi! I am Priya Sharma</p>
           <h1 className="mb-2 text-2xl font-bold text-gray-900 dark:text-white">
             I will help you build a beautiful Frontend
@@ -23,9 +23,9 @@ const Home = () => {
             </a>
           </div>
         </div>
-        <div>
+        <div className="">
           <img
-            className="object-cover rounded-full shadow-2xl"
+            className="object-cover rounded-full shadow-2xl aspect-square"
             src={PortfolioImg}
             alt="Priya Image"
           />
