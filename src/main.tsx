@@ -42,7 +42,7 @@ const router = createBrowserRouter(
     },
   ],
   {
-    basename: "/miss-techie",
+    // basename: "/miss-techie",
   }
 );
 
