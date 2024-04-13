@@ -1,5 +1,6 @@
 import { useState } from "react";
 import PriyaResume from "../assets/priya-sharma-resume-2024.pdf";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   const [openMobileMenu, setOpenMobileMenu] = useState(false);
@@ -22,6 +23,7 @@ const Header = () => {
           aria-controls="navbar-default"
           aria-expanded={`${openMobileMenu ? true : false}`}
           onClick={toggleMenu}
+          onBlur={toggleMenu}
         >
           <span className="sr-only">Open main menu</span>
           <svg
@@ -75,7 +77,7 @@ const Header = () => {
                 href="#"
                 className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
               >
-                Services
+                <Link to="/projects">Projects</Link>
               </a>
             </li>
             <li>

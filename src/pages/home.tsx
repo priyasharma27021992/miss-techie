@@ -32,12 +32,22 @@ const Home = () => {
                 Want to know more?
               </a>
               <div className="flex flex-row justify-start flex-wrap">
-                <img src={GithubSvg} alt="Github" className="m-3 w-10 h-10" />
-                <img
-                  src={LinkedInSvg}
-                  alt="LinkedIn"
-                  className="m-3 w-10 h-10"
-                />
+                <a
+                  href="https://github.com/priyasharma27021992"
+                  target="_blank"
+                >
+                  <img src={GithubSvg} alt="Github" className="m-3 w-10 h-10" />
+                </a>
+                <a
+                  href="https://www.linkedin.com/in/priya-sharma-ab86ba46/"
+                  target="_blank"
+                >
+                  <img
+                    src={LinkedInSvg}
+                    alt="LinkedIn"
+                    className="m-3 w-10 h-10"
+                  />
+                </a>
               </div>
             </div>
           </div>
