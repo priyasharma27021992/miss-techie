@@ -12,17 +12,22 @@ const Home = () => {
         </div>
       ))}
       <div className="h-screen bg-white dark:bg-gray-900">
-        <div className="flex flex-col items-center justify-between rounded-lg m-auto h-full max-w-2xl px-4 py-16 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8 md:flex-row bg-gradient-to-r from-indigo-500 from-10% via-sky-500 via-30% to-emerald-500 to-90%">
+        <div className="flex flex-col items-center justify-between rounded-lg m-auto h-screen max-w-2xl px-4 py-16 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8 md:flex-row bg-gradient-to-r from-indigo-500 from-10% via-sky-500 via-30% to-emerald-500 to-90%">
           <div className="flex flex-col p-5 md:p-10 max-w-2xl">
             <p className="mb-4">Hi! I am Priya Sharma</p>
             <h1 className="mb-2 text-2xl font-bold text-gray-900 dark:text-white">
               I will help you build a beautiful Frontend
             </h1>
             <p className="font-light mb-4">
-              I am a frontend developer with overall experience of 10 years and
-              releavant of 6 years on building frontend end. I ahve worked upon
-              mainly reactjs, nextjs, vanilla js, tailwind css, material-ui,
-              styling etc.
+              "I bring a decade of experience in frontend development, with a
+              focused expertise spanning six years. My proficiency revolves
+              around crafting seamless user experiences using an array of
+              technologies, including ReactJS, NextJS, Vanilla JavaScript,
+              Tailwind CSS, and Material-UI. My approach extends beyond mere
+              implementation to encompass intuitive design and efficient styling
+              practices. I thrive on leveraging these tools to create responsive
+              and visually appealing interfaces that enhance user engagement and
+              satisfaction."
             </p>
             <div>
               <a
