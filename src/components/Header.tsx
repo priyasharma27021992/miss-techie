@@ -1,9 +1,12 @@
 import { useState } from "react";
 import PriyaResume from "../assets/priya-sharma-resume-2024.pdf";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 const Header = () => {
-  const [openMobileMenu, setOpenMobileMenu] = useState(false);
+  const [openMobileMenu, setOpenMobileMenu] = useState(true);
+  const location = useLocation();
+  const pathname = location.pathname.split("/")[1];
+  console.log("baby", location);
 
   const toggleMenu = () => {
     setOpenMobileMenu(!openMobileMenu);
@@ -25,8 +28,8 @@ const Header = () => {
           className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
           aria-controls="navbar-default"
           aria-expanded={`${openMobileMenu ? true : false}`}
-          onClick={toggleMenu}
-          onBlur={toggleMenu}
+          onFocus={toggleMenu}
+          onMouseLeave={toggleMenu}
         >
           <span className="sr-only">Open main menu</span>
           <svg
@@ -61,15 +64,18 @@ const Header = () => {
             <li>
               <Link
                 to="/"
-                className="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white md:dark:text-blue-500"
-                aria-current="page"
+                className={`block py-2 px-3 ${
+                  pathname === "" ? "text-blue-500" : "text-black"
+                } rounded md:bg-transparent md:p-0 dark:text-white md:dark:text-blue-500`}
               >
                 Home
               </Link>
             </li>
             <li>
               <Link
-                className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                className={`block py-2 px-3 text-gray-900 rounded ${
+                  pathname === "projects" ? "text-blue-500" : "text-black"
+                } hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-900 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent`}
                 to="/projects"
               >
                 Projects
@@ -78,7 +84,9 @@ const Header = () => {
             <li>
               <Link
                 to="/contact"
-                className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                className={`block py-2 px-3 text-gray-900 rounded ${
+                  pathname === "contact" ? "text-blue-500" : "text-black"
+                } hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent`}
               >
                 Contact
               </Link>
