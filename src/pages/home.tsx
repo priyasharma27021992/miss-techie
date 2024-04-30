@@ -12,15 +12,15 @@ const Home = () => {
         </div>
       ))}
       <div className="h-full w-full bg-white dark:bg-gray-900">
-        <div className="flex flex-col items-center justify-between rounded-lg m-auto lg:h-screen max-w-2xl px-4 py-16 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8 md:flex-row bg-gradient-to-r from-indigo-500 from-10% via-sky-500 via-30% to-emerald-500 to-90%">
+        <div className="flex flex-col items-center justify-between rounded-[3rem] m-auto lg:h-screen max-w-2xl px-4 py-16 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8 md:flex-row bg-gradient-to-r from-indigo-500 from-10% via-sky-500 via-30% to-emerald-500 to-90%">
           <div className="flex flex-col p-5 md:p-10 max-w-2xl">
-            <p className="mb-4 animate-slidein300 opacity-0">
-              Hi! I am Priya Sharma
-            </p>
-            <h1 className="mb-2 text-2xl font-bold text-gray-900 dark:text-white animate-slidein300 opacity-0">
+            <h1 className="mb-2 text-2xl font-bold text-gray-900 dark:text-white animate-typing overflow-hidden whitespace-nowrap">
               Hello!
             </h1>
-            <p className="font-light mb-4 animate-slidein600 opacity-0">
+            <p className="m-0 normal-case animate-typing overflow-hidden whitespace-nowrap">
+              I am Priya Sharma from Delhi(India)!
+            </p>
+            <p className="font-light mb-4 w-xl">
               "With a decade-long journey in frontend development, I've honed my
               skills over the past six years to become a specialist in this
               field. My expertise lies in crafting dynamic and engaging user
@@ -35,7 +35,7 @@ const Home = () => {
               ensuring that I consistently deliver high-quality results that
               exceed expectations."
             </p>
-            <div className="animate-slidein900 opacity-0">
+            <div className="">
               <a
                 href=""
                 className="font-medium text-primary-600 hover:text-primary-800 dark:text-primary-500 dark:hover:text-primary-700"

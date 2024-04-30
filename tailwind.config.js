@@ -7,19 +7,15 @@ export default {
     },
     extend: {
       animation: {
-        slidein300: "slidein 1s ease 300ms infinite",
-        slidein600: "slidein 1s ease 600ms infinite",
-        slidein900: "slidein 1s ease 900ms infinite",
+        typing: "typing 3.5s steps(30, end) infinite",
       },
       keyframes: {
-        slidein: {
+        typing: {
           from: {
-            opacity: "0",
-            transfor: "translateY(-10px)",
+            width: "0",
           },
           to: {
-            opacity: "1",
-            transform: "translateY(0)",
+            width: "100%",
           },
         },
       },

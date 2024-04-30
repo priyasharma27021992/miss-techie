@@ -18,7 +18,7 @@ const Header = () => {
           to="#"
           className="flex items-center space-x-3 rtl:space-x-reverse"
         >
-          <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
+          <span className="self-center text-2xl whitespace-nowrap dark:text-white">
             Miss Techie In-Progress
           </span>
         </Link>
@@ -57,14 +57,14 @@ const Header = () => {
           <ul
             className={`font-medium flex flex-col items-baseline p-4 md:p-0 mt-4 border border-gray-100 rounded-lg ${
               openMobileMenu &&
-              "absolute right-0 w-full items-center md:relative md:w-auto md:items-start"
+              "absolute right-0 w-full items-center md:relative md:w-auto"
             }
           bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700`}
           >
             <li>
               <Link
                 to="/"
-                className={`block py-2 px-3 ${
+                className={`block py-2 px-3 text-xl ${
                   pathname === "" ? "text-blue-500" : "text-black"
                 } rounded md:bg-transparent md:p-0 dark:text-white md:dark:text-blue-500`}
               >
@@ -73,7 +73,7 @@ const Header = () => {
             </li>
             <li>
               <Link
-                className={`block py-2 px-3 text-gray-900 rounded ${
+                className={`block py-2 px-3 text-xl text-gray-900 rounded ${
                   pathname === "projects" ? "text-blue-500" : "text-black"
                 } hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-900 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent`}
                 to="/projects"
@@ -84,7 +84,7 @@ const Header = () => {
             <li>
               <Link
                 to="/contact"
-                className={`block py-2 px-3 text-gray-900 rounded ${
+                className={`block py-2 px-3 text-xl text-gray-900 rounded ${
                   pathname === "contact" ? "text-blue-500" : "text-black"
                 } hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent`}
               >
@@ -97,7 +97,7 @@ const Header = () => {
                 download
                 className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
               >
-                <button className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-bold py-2 px-4 rounded-lg inline-flex items-center">
+                <button className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-bold py-2 px-4 rounded-2xl inline-flex items-center">
                   <svg
                     className="fill-current w-4 h-4 mr-2"
                     xmlns="http://www.w3.org/2000/svg"
