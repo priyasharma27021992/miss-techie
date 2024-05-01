@@ -6,7 +6,6 @@ const Header = () => {
   const [openMobileMenu, setOpenMobileMenu] = useState(true);
   const location = useLocation();
   const pathname = location.pathname.split("/")[1];
-  console.log("baby", location);
 
   const toggleMenu = () => {
     setOpenMobileMenu(!openMobileMenu);
@@ -19,7 +18,7 @@ const Header = () => {
           className="flex items-center space-x-3 rtl:space-x-reverse"
         >
           <img
-            className="rounded-t-lg max-w-20"
+            className="rounded-t-lg max-w-20 hidden sm:block"
             src="miss-techie-logo.jpg"
             alt="Miss Techie logo"
           />
@@ -33,7 +32,7 @@ const Header = () => {
           className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
           aria-controls="navbar-default"
           aria-expanded={`${openMobileMenu ? true : false}`}
-          onFocus={toggleMenu}
+          onClick={toggleMenu}
           onMouseLeave={toggleMenu}
         >
           <span className="sr-only">Open main menu</span>
