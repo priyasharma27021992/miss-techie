@@ -40,7 +40,9 @@ const routes = [
     ],
   },
 ];
-let router = createBrowserRouter(routes);
+let router = createBrowserRouter(routes, {
+  basename: "/miss-techie",
+});
 
 if (window?.process?.env?.NODE_ENV === "production") {
   console.log("came here", window?.process.env.REACT_APP_ENV);
