@@ -40,10 +40,10 @@ const router = createBrowserRouter(
         },
       ],
     },
-  ]
-  // {
-  //   basename: "/miss-techie",
-  // }
+  ],
+  {
+    basename: "/miss-techie",
+  }
 );
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
