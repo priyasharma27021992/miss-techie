@@ -20,6 +20,12 @@ const PROJECTS = [
     image: "simple-calc",
     projectUrl: `${GITHUB_BASE_URL}//simple-calculator/`,
   },
+  {
+    name: "Url Shortner",
+    description: "Fed up with long urls? Use the short ones",
+    image: "short-url",
+    projectUrl: `https://url-shortner-ten-mu.vercel.app/`,
+  },
 ];
 
 export { PROJECTS, GITHUB_BASE_URL };

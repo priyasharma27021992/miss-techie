@@ -15,9 +15,14 @@ const Header = () => {
     <nav className="bg-white border-gray-200 dark:bg-gray-900">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
         <Link
-          to="#"
+          to="/"
           className="flex items-center space-x-3 rtl:space-x-reverse"
         >
+          <img
+            className="rounded-t-lg max-w-20"
+            src="miss-techie-logo.jpg"
+            alt="Miss Techie logo"
+          />
           <span className="self-center text-2xl whitespace-nowrap dark:text-white">
             Miss Techie In-Progress
           </span>
