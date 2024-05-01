@@ -8,43 +8,46 @@ import Home from "./pages/home.tsx";
 import "./index.css";
 import Contact from "./pages/contact.tsx";
 
-const router = createBrowserRouter(
-  [
-    {
-      path: "/",
-      element: <App />,
-      children: [
-        {
-          path: "/",
-          element: <Home />,
-        },
-      ],
-    },
-    {
-      path: "/projects",
-      element: <App />,
-      children: [
-        {
-          path: "",
-          element: <Projects />,
-        },
-      ],
-    },
-    {
-      path: "/contact",
-      element: <App />,
-      children: [
-        {
-          path: "",
-          element: <Contact />,
-        },
-      ],
-    },
-  ],
+const routes = [
   {
+    path: "/",
+    element: <App />,
+    children: [
+      {
+        path: "/",
+        element: <Home />,
+      },
+    ],
+  },
+  {
+    path: "/projects",
+    element: <App />,
+    children: [
+      {
+        path: "",
+        element: <Projects />,
+      },
+    ],
+  },
+  {
+    path: "/contact",
+    element: <App />,
+    children: [
+      {
+        path: "",
+        element: <Contact />,
+      },
+    ],
+  },
+];
+let router = createBrowserRouter(routes);
+
+if (window?.process?.env?.NODE_ENV === "production") {
+  console.log("came here", window?.process.env.REACT_APP_ENV);
+  router = createBrowserRouter(routes, {
     basename: "/miss-techie",
-  }
-);
+  });
+}
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
