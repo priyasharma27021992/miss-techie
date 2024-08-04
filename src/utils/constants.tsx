@@ -1,5 +1,5 @@
-const GITHUB_BASE_URL = "https://priyasharma27021992.github.io";
-const PROJECTS = [
+export const GITHUB_BASE_URL = "https://priyasharma27021992.github.io";
+export const PROJECTS = [
   {
     name: "Portfolio",
     description:
@@ -26,6 +26,11 @@ const PROJECTS = [
     image: "short-url",
     projectUrl: `https://url-shortner-ten-mu.vercel.app/`,
   },
+  {
+    name: "Nanhe Khwab",
+    description:
+      "NGO site made from bootstrap, jquery, html, css and hoisted on aws",
+    image: "nanhe-khwab",
+    projectUrl: `https://nanhekhwab.in/`,
+  },
 ];
-
-export { PROJECTS, GITHUB_BASE_URL };

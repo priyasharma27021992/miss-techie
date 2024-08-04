@@ -6,7 +6,7 @@ const Header = () => {
   const [openMobileMenu, setOpenMobileMenu] = useState(true);
   const location = useLocation();
   const pathname = location.pathname.split("/")[1];
-
+  console.log("pathname", pathname);
   const toggleMenu = () => {
     setOpenMobileMenu(!openMobileMenu);
   };
@@ -69,17 +69,17 @@ const Header = () => {
               <Link
                 to="/"
                 className={`block py-2 px-3 text-xl ${
-                  pathname === "" ? "text-blue-500" : "text-black"
-                } rounded md:bg-transparent md:p-0 dark:text-white md:dark:text-blue-500`}
+                  pathname === "" ? "underline" : ""
+                } rounded md:bg-transparent md:p-0 dark:text-white hover:text-blue-700`}
               >
                 Home
               </Link>
             </li>
             <li>
               <Link
-                className={`block py-2 px-3 text-xl text-gray-900 rounded ${
-                  pathname === "projects" ? "text-blue-500" : "text-black"
-                } hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-900 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent`}
+                className={`block py-2 px-3 text-xl rounded ${
+                  pathname === "projects" ? "underline" : ""
+                } hover:bg-gray-100 md:hover:bg-transparent md:border-0 hover:text-blue-700 md:p-0 dark:text-white dark:hover:text-blue-900 dark:hover:bg-gray-700 md:dark:hover:bg-transparent`}
                 to="/projects"
               >
                 Projects
@@ -88,9 +88,9 @@ const Header = () => {
             <li>
               <Link
                 to="/contact"
-                className={`block py-2 px-3 text-xl text-gray-900 rounded ${
-                  pathname === "contact" ? "text-blue-500" : "text-black"
-                } hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent`}
+                className={`block py-2 px-3 text-xl  rounded ${
+                  pathname === "contact" ? "underline" : ""
+                } hover:bg-gray-100 md:hover:bg-transparent md:border-0 hover:text-blue-700 md:p-0 dark:text-white dark:hover:text-blue-500 dark:hover:bg-gray-700 md:dark:hover:bg-transparent`}
               >
                 Contact
               </Link>
@@ -99,7 +99,7 @@ const Header = () => {
               <Link
                 to={PriyaResume}
                 download
-                className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 hover:text-blue-700 md:p-0 dark:text-white dark:hover:text-blue-500 dark:hover:bg-gray-700 md:dark:hover:bg-transparent"
               >
                 <button className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-bold py-2 px-4 rounded-2xl inline-flex items-center">
                   <svg
