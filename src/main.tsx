@@ -40,12 +40,9 @@ const routes = [
     ],
   },
 ];
-let router = createBrowserRouter(
-  routes
-  //   {
-  //   basename: "/miss-techie",
-  // }
-);
+let router = createBrowserRouter(routes, {
+  basename: "/miss-techie",
+});
 
 if (window?.process?.env?.NODE_ENV === "production") {
   router = createBrowserRouter(routes, {
