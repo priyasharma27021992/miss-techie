@@ -3,7 +3,7 @@ import PriyaResume from "../assets/priya-sharma-resume-2024.pdf";
 import { Link, useLocation } from "react-router-dom";
 
 const Header = () => {
-  const [openMobileMenu, setOpenMobileMenu] = useState(true);
+  const [openMobileMenu, setOpenMobileMenu] = useState(false);
   const location = useLocation();
   const pathname = location.pathname.split("/")[1];
   console.log("pathname", pathname);

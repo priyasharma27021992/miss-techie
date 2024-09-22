@@ -3,6 +3,8 @@ import GithubSvg from "../assets/github.svg";
 import LinkedInSvg from "../assets/linked-in.svg";
 
 import "../styles/pure-particle.scss";
+import SkillSetProgressBar from "../components/SkillSetProgressBar";
+
 const Home = () => {
   return (
     <div className="w-screen h-[calc(100vh-5rem)]">
@@ -12,7 +14,7 @@ const Home = () => {
         </div>
       ))}
       <div className="h-full w-full bg-white dark:bg-gray-900">
-        <div className="flex flex-col items-center justify-between rounded-[3rem] m-auto lg:h-screen max-w-2xl px-4 py-16 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8 md:flex-row bg-gradient-to-r from-indigo-500 from-10% via-sky-500 via-30% to-emerald-500 to-90%">
+        <div className="flex flex-col items-center justify-between md:rounded-[3rem] m-auto lg:h-screen max-w-2xl px-4 py-16 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8 md:flex-row bg-gradient-to-r from-indigo-500 from-10% via-sky-500 via-30% to-emerald-500 to-90%">
           <div className="flex flex-col p-5 md:p-10 max-w-2xl">
             <h1 className="mb-2 text-2xl font-bold text-gray-900 dark:text-white animate-typing overflow-hidden whitespace-nowrap">
               Hello!
@@ -61,6 +63,7 @@ const Home = () => {
                 </a>
               </div>
             </div>
+            <SkillSetProgressBar />
           </div>
           <div>
             <img
