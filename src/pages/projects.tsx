@@ -10,11 +10,11 @@ const Projects = () => {
         {PROJECTS.map((project) => (
           <div className="max-w-sm bg-white border-gray-200 rounded-lg shadow-lg dark:bg-gray-700 dark:border-gray-700">
             <a href={project.projectUrl}>
-              <img
-                className="rounded-t-lg w-50 h-50"
-                src={`${project.image}.png`}
-                alt={project.name}
-              />
+              <iframe
+                src={project.projectUrl}
+                title={project.name}
+                className="w-[400px] h-[400px]"
+              ></iframe>
               <div className="p-5">
                 <h5 className="mb-2 text-2xl fond-bold tracking-tight text-gray-900 dark:text-white">
                   {project.name}
