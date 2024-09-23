@@ -7,16 +7,16 @@ import SkillSetProgressBar from "../components/SkillSetProgressBar";
 
 const Home = () => {
   return (
-    <div className="w-screen h-[calc(100vh-5rem)]">
+    <section className="w-screen h-[calc(100vh-5rem)]">
       {Array.from(Array(100).keys()).map(() => (
         <div className="circle-container">
           <div className="circle"></div>
         </div>
       ))}
       <div className="h-full w-full bg-white dark:bg-gray-900">
-        <div className="flex flex-col items-center justify-between md:rounded-[3rem] m-auto lg:h-screen max-w-2xl px-4 py-16 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8 md:flex-row bg-gradient-to-r from-indigo-500 from-10% via-sky-500 via-30% to-emerald-500 to-90%">
+        <div className="flex flex-col items-center justify-between md:rounded-[3rem] m-auto lg:h-screen max-w-2xl px-4 py-16 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8 md:flex-row border-2 bg-black text-white">
           <div className="flex flex-col p-5 md:p-10 max-w-2xl">
-            <h1 className="mb-2 text-2xl font-bold text-gray-900 dark:text-white animate-typing overflow-hidden whitespace-nowrap">
+            <h1 className="mb-2 text-2xl font-bold animate-typing overflow-hidden whitespace-nowrap">
               Hello!
             </h1>
             <p className="m-0 normal-case animate-typing overflow-hidden whitespace-nowrap">
@@ -74,7 +74,7 @@ const Home = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
