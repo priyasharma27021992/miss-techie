@@ -64,13 +64,13 @@ const Header = () => {
                 openMobileMenu &&
                 "absolute right-0 w-full items-center md:relative md:w-auto"
               }
-          bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700`}
+          bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700 z-10`}
             >
               <li>
                 <Link
                   to="/"
                   className={`block py-2 px-3 text-xl ${
-                    pathname === "" ? "underline" : ""
+                    pathname === "" ? "bg-cyan-500" : ""
                   } rounded md:bg-transparent md:p-0 dark:text-white hover:text-blue-700`}
                 >
                   Home
@@ -79,7 +79,7 @@ const Header = () => {
               <li>
                 <Link
                   className={`block py-2 px-3 text-xl rounded ${
-                    pathname === "projects" ? "underline" : ""
+                    pathname === "projects" ? "bg-cyan-500" : ""
                   } hover:bg-gray-100 md:hover:bg-transparent md:border-0 hover:text-blue-700 md:p-0 dark:text-white dark:hover:text-blue-900 dark:hover:bg-gray-700 md:dark:hover:bg-transparent`}
                   to="/projects"
                 >
@@ -90,7 +90,7 @@ const Header = () => {
                 <Link
                   to="/contact"
                   className={`block py-2 px-3 text-xl  rounded ${
-                    pathname === "contact" ? "underline" : ""
+                    pathname === "contact" ? "bg-cyan-500" : ""
                   } hover:bg-gray-100 md:hover:bg-transparent md:border-0 hover:text-blue-700 md:p-0 dark:text-white dark:hover:text-blue-500 dark:hover:bg-gray-700 md:dark:hover:bg-transparent`}
                 >
                   Contact

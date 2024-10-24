@@ -9,13 +9,8 @@ const Home = () => {
   return (
     <main>
       <section className="w-screen h-[calc(100vh-5rem)]">
-        {Array.from(Array(100).keys()).map(() => (
-          <div className="circle-container">
-            <div className="circle"></div>
-          </div>
-        ))}
         <article className="h-full w-full bg-white dark:bg-gray-900">
-          <div className="flex flex-col items-center justify-between md:rounded-[3rem] m-auto max-w-2xl px-4 py-16 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8 md:flex-row border-2 bg-black text-white">
+          <div className="flex flex-col items-center justify-between md:rounded-[3rem] m-auto max-w-2xl px-4 py-16 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8 md:flex-row bg-black text-white">
             <div className="flex flex-col p-5 md:p-10 max-w-2xl">
               <h1 className="mb-2 text-2xl font-bold animate-typing overflow-hidden whitespace-nowrap">
                 Hello!
