@@ -16,7 +16,7 @@ const Home = () => {
   return (
     <main className="w-screen h-screen bg-cyan-700">
       <section className="flex justify-around items-center w-screen h-screen">
-        <div className="flex flex-col gap-2">
+        <div className="flex flex-col gap-2 m-5">
           <h1 className="font-bold text-4xl">Hi,</h1>
           <h4 className="font-bold text-4xl">I'm Priya Sharma</h4>
           <h5 className="text-base">
