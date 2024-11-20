@@ -15,7 +15,7 @@ import { Link } from "react-router-dom";
 const Home = () => {
   return (
     <main className="w-screen h-screen bg-cyan-700">
-      <section className="flex justify-around items-center w-screen h-screen">
+      <section className="flex flex-col md:flex-row justify-evenly md:justify-around items-center w-screen h-screen">
         <div className="flex flex-col gap-2 m-5">
           <h1 className="font-bold text-4xl">Hi,</h1>
           <h4 className="font-bold text-4xl">I'm Priya Sharma</h4>
@@ -46,20 +46,18 @@ const Home = () => {
               download
               className="w-full h-full flex justify-center items-center"
             >
-              <button className="">
-                <span className="block group-hover:hidden transition-all duration-[650ms] ease-out">
-                  CV/Resume
-                </span>
-                <span className="hidden group-hover:block group-hover:justify-center group-hover:items-center absolute transition-all duration-[650ms] ease-out">
-                  <svg
-                    className="fill-current w-4 h-4 mr-2"
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 20 20"
-                  >
-                    <path d="M13 8V2H7v6H2l8 8 8-8h-5zM0 18h20v2H0v-2z" />
-                  </svg>
-                </span>
-              </button>
+              <span className="block group-hover:hidden transition-all duration-[650ms] ease-out">
+                CV/Resume
+              </span>
+              <span className="hidden group-hover:block group-hover:justify-center group-hover:items-center absolute transition-all duration-[650ms] ease-out">
+                <svg
+                  className="fill-current w-4 h-4 mr-2"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 20 20"
+                >
+                  <path d="M13 8V2H7v6H2l8 8 8-8h-5zM0 18h20v2H0v-2z" />
+                </svg>
+              </span>
             </Link>
           </button>
         </div>

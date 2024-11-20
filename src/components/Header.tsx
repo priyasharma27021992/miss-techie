@@ -14,7 +14,7 @@ const Header = () => {
     <header className="">
       <button
         className={classNames(
-          "absolute top-20 right-20 w-20 h-16 flex flex-col justify-between curson-pointer z-[1500] transition-transform duration-[650ms] ease-out",
+          "absolute top-10 md:top-20 right-10 md:right-20 w-10 md:w-20 h-4 md:h-16 flex flex-col justify-between curson-pointer z-[1500] transition-transform duration-[650ms] ease-out",
           {
             "transform -rotate-45": openMobileMenu,
           }
@@ -48,7 +48,7 @@ const Header = () => {
       >
         <ul
           className={classNames(
-            "list-none w-screen h-screen flex flex-row flex-wrap justify-center lg:justify-between items-center text-white font-bold text-7xl"
+            "list-none w-screen h-screen flex flex-col md:flex-row flex-wrap justify-evenly md:justify-center lg:justify-between items-center text-white font-bold text-4xl md:text-7xl"
           )}
         >
           <li>
