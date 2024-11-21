@@ -10,7 +10,6 @@ import {
   faGithub,
   faLinkedin,
 } from "@fortawesome/free-brands-svg-icons";
-import { Link } from "react-router-dom";
 
 const Home = () => {
   return (
@@ -41,24 +40,24 @@ const Home = () => {
             />
           </div>
           <button className="relative group max-w-[200px] min-h-[50px] border-2 border-white m-2">
-            <Link
-              to={PriyaResume}
+            <a
+              href={PriyaResume}
               download
-              className="w-full h-full flex justify-center items-center"
+              className="w-full h-full flex justify-center items-center relative"
             >
-              <span className="block group-hover:hidden transition-all duration-[650ms] ease-out">
+              <span className="block transition-all duration-[650ms] ease-out group-hover:opacity-0">
                 CV/Resume
               </span>
-              <span className="hidden group-hover:block group-hover:justify-center group-hover:items-center absolute transition-all duration-[650ms] ease-out">
+              <span className="absolute opacity-0 transition-opacity duration-[650ms] ease-out group-hover:opacity-100">
                 <svg
-                  className="fill-current w-4 h-4 mr-2"
+                  className="fill-current w-4 h-4"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 20 20"
                 >
                   <path d="M13 8V2H7v6H2l8 8 8-8h-5zM0 18h20v2H0v-2z" />
                 </svg>
               </span>
-            </Link>
+            </a>
           </button>
         </div>
         <div>
