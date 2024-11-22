@@ -1,17 +1,14 @@
 import { useState } from "react";
-import { Link, useLocation } from "react-router-dom";
+import { Link } from "react-router-dom";
 import classNames from "classnames";
 
 const Header = () => {
   const [openMobileMenu, setOpenMobileMenu] = useState(false);
-  const location = useLocation();
-  const pathname = location.pathname.split("/")[1];
-  console.log("pathname", pathname);
   const toggleMenu = () => {
     setOpenMobileMenu(!openMobileMenu);
   };
   return (
-    <header className="">
+    <header>
       <button
         className={classNames(
           "absolute top-10 md:top-20 right-10 md:right-20 w-10 md:w-20 h-4 md:h-16 flex flex-col justify-between curson-pointer z-[1500] transition-transform duration-[650ms] ease-out",
