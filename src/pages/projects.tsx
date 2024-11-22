@@ -6,18 +6,21 @@ const Projects = () => {
       <h1 className="mb-2 lg:mb-10 text-4xl font-extrabold text-center">
         My Projects at glance
       </h1>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
         {PROJECTS.map((project) => (
-          <div className="max-w-sm bg-white border-gray-200 rounded-lg shadow-lg dark:bg-gray-700 dark:border-gray-700">
+          <div
+            key={project.name}
+            className="max-w-sm bg-white border-gray-200 dark:border-gray-600 rounded-lg shadow-xl transform transition-transform hover:scale-105"
+          >
             <a href={project.projectUrl}>
-              <div className="relative w-full h-56">
+              <div className="relative w-full h-96">
                 <iframe
                   src={project.projectUrl}
                   title={project.name}
                   className="w-full h-full border-none"
                 ></iframe>
               </div>
-              <div className="p-5">
+              <div className="p-6">
                 <h5 className="mb-2 text-2xl fond-bold tracking-tight text-gray-900 dark:text-white">
                   {project.name}
                 </h5>
