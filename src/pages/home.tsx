@@ -26,17 +26,17 @@ const Home = () => {
               children={
                 <FontAwesomeIcon icon={faInstagram} aria-label="instagram" />
               }
-              href=""
+              href="https://www.instagram.com/trippygirl2702"
             />
             <IconButton
               children={<FontAwesomeIcon icon={faGithub} aria-label="github" />}
-              href=""
+              href="https://github.com/priyasharma27021992"
             />
             <IconButton
               children={
                 <FontAwesomeIcon icon={faLinkedin} aria-label="linkedin" />
               }
-              href=""
+              href="https://www.linkedin.com/in/priya-sharma-ab86ba46/"
             />
           </div>
           <button className="relative group max-w-[200px] min-h-[50px] border-2 border-white m-2">

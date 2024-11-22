@@ -18,6 +18,8 @@ export const IconButton = ({
         iconClassName
       )}
       href={href}
+      target="_blank"
+      rel="noopener noreferrer"
     >
       {children}
     </a>
