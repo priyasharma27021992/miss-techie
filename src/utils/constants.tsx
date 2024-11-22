@@ -1,6 +1,13 @@
 export const GITHUB_BASE_URL = "https://priyasharma27021992.github.io";
 export const PROJECTS = [
   {
+    name: "Nanhe Khwab",
+    description:
+      "NGO site made from bootstrap, jquery, html, css and hoisted on aws",
+    image: "nanhe-khwab",
+    projectUrl: `https://nanhekhwab.in/`,
+  },
+  {
     name: "Portfolio",
     description:
       "Ofcourse, my own portfolio which is made using mainly reactjs, vite, typescript, sass, tailwind. Also, it is in progress",
@@ -25,12 +32,5 @@ export const PROJECTS = [
     description: "Fed up with long urls? Use the short ones",
     image: "short-url",
     projectUrl: `https://url-shortner-ten-mu.vercel.app/`,
-  },
-  {
-    name: "Nanhe Khwab",
-    description:
-      "NGO site made from bootstrap, jquery, html, css and hoisted on aws",
-    image: "nanhe-khwab",
-    projectUrl: `https://nanhekhwab.in/`,
   },
 ];
