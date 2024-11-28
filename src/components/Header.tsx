@@ -63,6 +63,11 @@ const Header = () => {
               Contact
             </Link>
           </li>
+          <li>
+            <Link to="/job-experiences" onClick={toggleMenu}>
+              Job Experiences
+            </Link>
+          </li>
         </ul>
       </nav>
     </header>

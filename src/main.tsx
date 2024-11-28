@@ -7,6 +7,7 @@ import Home from "./pages/home.tsx";
 
 import "./index.css";
 import Contact from "./pages/contact.tsx";
+import Experiences from "./pages/experiences.tsx";
 
 const routes = [
   {
@@ -36,6 +37,16 @@ const routes = [
       {
         path: "",
         element: <Contact />,
+      },
+    ],
+  },
+  {
+    path: "/job-experiences",
+    element: <App />,
+    children: [
+      {
+        path: "",
+        element: <Experiences />,
       },
     ],
   },
