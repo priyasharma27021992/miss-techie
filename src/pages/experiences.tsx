@@ -1,6 +1,3 @@
-// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-// import { faBagShopping } from "@fortawesome/free-solid-svg-icons";
-
 import { ExperienceType } from "../types/common";
 import { JOB_EXPERIENCES } from "../utils/constants";
 
