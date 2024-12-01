@@ -19,7 +19,7 @@ const Experiences = () => {
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-10">
             {/* left content */}
-            <div className="text-right pr-6">
+            <div className="text-right mr-5 bg-cyan-400 rounded-md p-5">
               <h3>{exp?.title}</h3>
               <p className="text-gray-600">{exp?.description}</p>
               <span className="text-sm text-gray-500">{exp?.time}</span>
