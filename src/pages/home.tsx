@@ -9,6 +9,7 @@ import {
   faInstagram,
   faGithub,
   faLinkedin,
+  faCentercode,
 } from "@fortawesome/free-brands-svg-icons";
 
 const Home = () => {
@@ -37,6 +38,12 @@ const Home = () => {
                 <FontAwesomeIcon icon={faLinkedin} aria-label="linkedin" />
               }
               href="https://www.linkedin.com/in/priya-sharma-ab86ba46/"
+            />
+            <IconButton
+              children={
+                <FontAwesomeIcon icon={faCentercode} aria-label="leetcode" />
+              }
+              href="https://leetcode.com/u/priyasharma2702/"
             />
           </div>
           <button className="relative group max-w-[200px] min-h-[50px] border-2 border-white m-2">
