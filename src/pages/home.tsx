@@ -71,7 +71,7 @@ const Home = () => {
           <aside>
             <figure>
               <img
-                className="object-cover rounded-full shadow-2xl aspect-square min-w-[200px] w-[30vw]"
+                className="object-cover rounded-full shadow-2xl aspect-square min-w-[200px] w-[30vw] hover:scale-110"
                 src={PortfolioImg}
                 alt="Priya Image"
               />
