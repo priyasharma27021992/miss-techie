@@ -13,6 +13,8 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 
 const Home = () => {
+  const lastUpdatedDate = new Date("12-04-2024");
+  lastUpdatedDate.setHours(0, 0, 0, 0);
   return (
     <main className="w-screen h-screen bg-cyan-700">
       <section className="flex flex-col md:flex-row justify-evenly md:justify-around items-center w-screen h-screen">
@@ -66,6 +68,9 @@ const Home = () => {
               </span>
             </a>
           </button>
+          <div className="text-white text-lg">
+            Last updated: {lastUpdatedDate.toDateString()}
+          </div>
         </div>
         <div>
           <aside>
