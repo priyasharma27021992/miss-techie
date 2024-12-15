@@ -27,25 +27,33 @@ const Home = () => {
           <div className="flex flex-row">
             <IconButton
               children={
-                <FontAwesomeIcon icon={faInstagram} aria-label="instagram" />
+                <FontAwesomeIcon
+                  icon={faInstagram}
+                  aria-label="instagram"
+                  className=""
+                />
               }
               href="https://www.instagram.com/trippygirl2702"
+              iconClassName="hover:bg-pink-600 hover:text-white transition-all duration-300 ease-in-out"
             />
             <IconButton
               children={<FontAwesomeIcon icon={faGithub} aria-label="github" />}
               href="https://github.com/priyasharma27021992"
+              iconClassName="hover:bg-black hover:text-white transition-all duration-300 ease-in-out"
             />
             <IconButton
               children={
                 <FontAwesomeIcon icon={faLinkedin} aria-label="linkedin" />
               }
               href="https://www.linkedin.com/in/priya-sharma-ab86ba46/"
+              iconClassName="hover:bg-sky-800 hover:text-white transition-all duration-300 ease-in-out"
             />
             <IconButton
               children={
                 <FontAwesomeIcon icon={faCentercode} aria-label="leetcode" />
               }
               href="https://leetcode.com/u/priyasharma2702/"
+              iconClassName="hover:bg-black hover:text-white transition-all duration-300 ease-in-out"
             />
           </div>
           <button className="relative group max-w-[200px] min-h-[50px] border-2 border-white m-2">

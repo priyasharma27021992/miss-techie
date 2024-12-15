@@ -45,7 +45,7 @@ const Header = () => {
       >
         <ul
           className={classNames(
-            "list-none w-screen h-screen flex flex-col md:flex-row flex-wrap justify-evenly md:justify-center lg:justify-between items-center text-white font-bold text-4xl md:text-7xl"
+            "list-none w-screen md:w-[80%] m-auto h-screen flex flex-col md:flex-row flex-wrap justify-evenly md:justify-center lg:justify-between items-center text-white text-4xl md:text-6xl font-thin"
           )}
         >
           <li>
