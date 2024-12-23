@@ -13,7 +13,7 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 
 const Home = () => {
-  const lastUpdatedDate = new Date("12-20-2024");
+  const lastUpdatedDate = new Date("12-23-2024");
   lastUpdatedDate.setHours(0, 0, 0, 0);
   console.log("baby", lastUpdatedDate);
   return (
