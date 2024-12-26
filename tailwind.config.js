@@ -8,6 +8,7 @@ export default {
     extend: {
       animation: {
         typing: "typing 3.5s steps(30, end) infinite",
+        fadeInLeftToRight: "fadeInLeftToRight 5s ease-in-out",
       },
       keyframes: {
         typing: {
@@ -17,6 +18,10 @@ export default {
           to: {
             width: "100%",
           },
+        },
+        fadeInLeftToRight: {
+          "0%": { opacity: "0", transform: "translateX(-100%)" },
+          "100%": { opacity: "1", transform: "translateX(0)" },
         },
       },
     },

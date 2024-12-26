@@ -17,7 +17,7 @@ const Experiences = () => {
             </div>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-10">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-10 animate-fadeInLeftToRight">
             {/* left content */}
             <div className="text-right mr-5 bg-cyan-400 rounded-md p-5">
               <h3>{exp?.title}</h3>
