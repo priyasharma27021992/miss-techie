@@ -1,7 +1,6 @@
 import PortfolioImg from "../assets/portfolio-priya.jpg";
 
 import "../styles/pure-particle.scss";
-// import SkillSetProgressBar from "../components/SkillSetProgressBar";
 import PriyaResume from "../assets/priya-sharma-resume-2024.pdf";
 import { IconButton } from "../components/IconButton";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
