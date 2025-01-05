@@ -10,6 +10,7 @@ import {
   faLinkedin,
   faCentercode,
 } from "@fortawesome/free-brands-svg-icons";
+import { InfiniteScroll } from "../components/InfiniteScroll";
 
 const Home = () => {
   const lastUpdatedDate = new Date("01-03-2025");
