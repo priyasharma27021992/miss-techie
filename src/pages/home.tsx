@@ -10,10 +10,9 @@ import {
   faLinkedin,
   faCentercode,
 } from "@fortawesome/free-brands-svg-icons";
-import { InfiniteScroll } from "../components/InfiniteScroll";
 
 const Home = () => {
-  const lastUpdatedDate = new Date("01-03-2025");
+  const lastUpdatedDate = new Date("01-06-2025");
   lastUpdatedDate.setHours(0, 0, 0, 0);
   console.log("baby", lastUpdatedDate);
   return (
