@@ -12,9 +12,8 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 
 const Home = () => {
-  const lastUpdatedDate = new Date("01-06-2025");
+  const lastUpdatedDate = new Date("01-20-2025");
   lastUpdatedDate.setHours(0, 0, 0, 0);
-  console.log("baby", lastUpdatedDate);
   return (
     <main className="w-screen h-screen bg-cyan-700">
       <section className="flex flex-col md:flex-row justify-evenly md:justify-around items-center w-screen h-screen">
