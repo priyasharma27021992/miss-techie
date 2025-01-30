@@ -12,7 +12,7 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 
 const Home = () => {
-  const lastUpdatedDate = new Date("01-25-2025");
+  const lastUpdatedDate = new Date("01-30-2025");
   lastUpdatedDate.setHours(0, 0, 0, 0);
   return (
     <main className="w-screen h-screen bg-cyan-700">
@@ -21,7 +21,7 @@ const Home = () => {
           <h1 className="font-bold text-4xl">Hi,</h1>
           <h4 className="font-bold text-4xl">I'm Priya Sharma</h4>
           <h5 className="text-base">
-            Web Development | React | Nextjs | JavaScript| CSS
+            Web Development | React | Nextjs | JavaScript| CSS| Node Js| Python
           </h5>
           <div className="flex flex-row">
             <IconButton
