@@ -12,7 +12,7 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 
 const Home = () => {
-  const lastUpdatedDate = new Date("01-31-2025");
+  const lastUpdatedDate = new Date(02-01-2025");
   lastUpdatedDate.setHours(0, 0, 0, 0);
   return (
     <main className="w-screen h-screen bg-cyan-700">
