@@ -3,7 +3,7 @@ this is my portfolio which I have made on react. A simple application to showcas
 How I would rate myself is below:
 1. React: 8/10
 2. Vanilla JS: 8/10
-3. Next: 8/10
+3. Next: 7/10
 4. CSS and Styling Frameworks which includes tailwind, material ui, styled-components: 7/10
 6. Node js: 5/10
 7. Python: 4/10(Absolute Beginner)
