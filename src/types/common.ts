@@ -8,4 +8,11 @@ type ExperienceType = {
   location: string;
 };
 
-export type { SizeUnit, ExperienceType };
+type Project = {
+      name: string
+      description: string
+      image: string,
+      projectUrl: string
+}
+
+export type { SizeUnit, ExperienceType,Project };
