@@ -36,6 +36,12 @@ export const IN_PROGRESS_PROJECTS = [
 		image: 'nanhe-khwab',
 		projectUrl: 'https://nanhekhwab.in/',
 	},
+	{
+		name: 'Movie Explorer',
+		description: 'Made on next.js using SSR, ISR concepts, uses IMDB api',
+		image: 'movie-explorer',
+		projectUrl: 'https://movie-explorer-six-mu.vercel.app/',
+	},
 ];
 
 export const INCOMPLETED_PROJECTS = [

@@ -46,27 +46,31 @@ const Projects = () => {
 					className='font-semibold text-lg mx-2 italic'>
 					Select Project Category
 				</label>
-				<select
-					id='project-category'
-					className='capitalize text-lg'
-					onChange={(e) => {
-						if (isValidProjectOption(e.target.value)) {
-							setFilteredProjects(PROJECT_OPTIONS[e.target.value]);
-						} else {
-							console.warn('Select valid option');
-						}
-					}}>
-					{Object.keys(PROJECT_OPTIONS).map((ele) => (
-						<option value={ele}>{ele.split('_').join(' ')}</option>
-					))}
-				</select>
+				<div>
+					<select
+						id='project-category'
+						className='capitalize text-lg'
+						onChange={(e) => {
+							if (isValidProjectOption(e.target.value)) {
+								setFilteredProjects(PROJECT_OPTIONS[e.target.value]);
+							} else {
+								console.warn('Select valid option');
+							}
+						}}>
+						{Object.keys(PROJECT_OPTIONS).map((ele) => (
+							<option value={ele}>{ele.split('_').join(' ')}</option>
+						))}
+					</select>
+				</div>
 			</div>
 			<div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10'>
 				{filteredProjects.map((project) => (
 					<div
 						key={project.name}
 						className='max-w-sm bg-white border-gray-200 dark:border-gray-600 rounded-lg shadow-xl transform transition-transform hover:scale-105'>
-						<a href={project.projectUrl}>
+						<a
+							href={project.projectUrl}
+							target='_blank'>
 							<div className='relative w-full h-96'>
 								<iframe
 									src={project.projectUrl}
