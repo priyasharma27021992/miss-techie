@@ -12,27 +12,27 @@ import {
 } from '@fortawesome/free-brands-svg-icons';
 
 const Home = () => {
-	const lastUpdatedDate = new Date();
-	lastUpdatedDate.setHours(0, 0, 0, 0);
 	return (
-		<main className='w-screen h-screen bg-cyan-700'>
-			<section className='flex flex-col md:flex-row justify-evenly md:justify-around items-center w-screen h-screen'>
+		<main className='w-screen min-h-screen bg-cyan-700 py-20'>
+			<section className='flex flex-col md:flex-row justify-center md:justify-between items-center w-screen h-screen px-8 md:px-20'>
 				<div className='flex flex-col gap-2 m-5'>
-					<h2 className='font-bold text-4xl'>
+					<h2 className='font-bold text-3xl sm:text-4xl leading-tight'>
 						Hi,
-						<br /> I'm Priya Sharma
 						<br />
-						<span className='text-xl font-semibold'>
-							Web Development | React | Nextjs | JavaScript| CSS| Node Js
-						</span>
+						I'm <span className='text-white'>Priya Sharma</span>
 					</h2>
-					<div className='flex flex-row'>
+
+					<p className='text-base sm:text-lg text-white/90 mt-3 max-w-[400px]'>
+						Frontend Engineer • React • Next.js • JavaScript • CSS • Node.js •
+						Tailwind • React Testing Library • Cypress
+					</p>
+					<div className='flex gap-3 mt-4'>
 						<IconButton
 							children={
 								<FontAwesomeIcon
 									icon={faInstagram}
 									aria-label='instagram'
-									className=''
+									size='lg'
 								/>
 							}
 							href='https://www.instagram.com/trippygirl2702'
@@ -69,15 +69,13 @@ const Home = () => {
 							iconClassName='hover:bg-black hover:text-white transition-all duration-300 ease-in-out'
 						/>
 					</div>
-					<button className='relative group max-w-[200px] min-h-[50px] border-2 border-white m-2'>
+					<button className='relative group max-w-[200px] min-h-[50px] m-2'>
 						<a
 							href={PriyaResume}
 							download
-							className='w-full h-full flex justify-center items-center relative'>
-							<span className='block transition-all duration-[650ms] ease-out group-hover:opacity-0'>
-								CV/Resume
-							</span>
-							<span className='absolute opacity-0 transition-opacity duration-[650ms] ease-out group-hover:opacity-100'>
+							className='mt-4 group border-2 border-white text-white px-6 py-3 inline-flex items-center gap-2 hover:bg-white hover:text-cyan-700 transition-all duration-300'>
+							<span>Download Resume</span>
+							<span className='opacity-0 transition-all duration-[650ms] ease-out group-hover:opacity-100'>
 								<svg
 									className='fill-current w-4 h-4'
 									xmlns='http://www.w3.org/2000/svg'
@@ -87,15 +85,12 @@ const Home = () => {
 							</span>
 						</a>
 					</button>
-					<div className='text-white text-lg'>
-						Last updated: {lastUpdatedDate.toDateString()}
-					</div>
 				</div>
 				<div>
 					<aside>
-						<figure className=' hover:scale-110 will-change-transform transition-transform ease-in duration-300 cursor-pointer'>
+						<figure>
 							<img
-								className='object-cover rounded-full shadow-2xl aspect-square min-w-[200px] w-[30vw]'
+								className='object-cover rounded-full shadow-2xl aspect-square w-[250px] md:w-[320px] ring-4 ring-white/20'
 								src={PortfolioImg}
 								alt='Priya Image'
 							/>

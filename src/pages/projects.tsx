@@ -40,28 +40,26 @@ const Projects = () => {
 			<h1 className='mb-2 lg:mb-10 text-4xl font-extrabold text-center'>
 				Projects at glance
 			</h1>
-			<div className='my-4'>
+			<div className='flex flex-col sm:flex-row gap-4 my-6'>
 				<label
 					htmlFor='project-category'
-					className='font-semibold text-lg mx-2 italic'>
+					className='font-semibold text-lg mx-2'>
 					Select Project Category
 				</label>
-				<div>
-					<select
-						id='project-category'
-						className='capitalize text-lg'
-						onChange={(e) => {
-							if (isValidProjectOption(e.target.value)) {
-								setFilteredProjects(PROJECT_OPTIONS[e.target.value]);
-							} else {
-								console.warn('Select valid option');
-							}
-						}}>
-						{Object.keys(PROJECT_OPTIONS).map((ele) => (
-							<option value={ele}>{ele.split('_').join(' ')}</option>
-						))}
-					</select>
-				</div>
+				<select
+					id='project-category'
+					className='capitalize text-lg'
+					onChange={(e) => {
+						if (isValidProjectOption(e.target.value)) {
+							setFilteredProjects(PROJECT_OPTIONS[e.target.value]);
+						} else {
+							console.warn('Select valid option');
+						}
+					}}>
+					{Object.keys(PROJECT_OPTIONS).map((ele) => (
+						<option value={ele}>{ele.split('_').join(' ')}</option>
+					))}
+				</select>
 			</div>
 			<div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10'>
 				{filteredProjects.map((project) => (
