@@ -14,15 +14,15 @@ import {
 const Home = () => {
 	return (
 		<main className='w-screen min-h-screen bg-cyan-700 py-20'>
-			<section className='flex flex-col md:flex-row justify-center md:justify-between items-center w-screen h-screen px-8 md:px-20'>
-				<div className='flex flex-col gap-2 m-5'>
-					<h2 className='font-bold text-3xl sm:text-4xl leading-tight'>
+			<section className='flex flex-col md:flex-row md:justify-between items-center w-screen h-screen px-8 md:px-20'>
+				<div className='flex flex-col items-center md:items-start gap-2 m-5'>
+					<h2 className='font-bold text-3xl sm:text-4xl leading-tight text-center md:text-start'>
 						Hi,
 						<br />
 						I'm <span className='text-white'>Priya Sharma</span>
 					</h2>
 
-					<p className='text-base sm:text-lg text-white/90 mt-3 max-w-[400px]'>
+					<p className='text-sm sm:text-lg text-white/90 mt-3 max-w-[400px]'>
 						Frontend Engineer • React • Next.js • JavaScript • CSS • Node.js •
 						Tailwind • React Testing Library • Cypress
 					</p>
@@ -69,13 +69,13 @@ const Home = () => {
 							iconClassName='hover:bg-black hover:text-white transition-all duration-300 ease-in-out'
 						/>
 					</div>
-					<button className='relative group max-w-[200px] min-h-[50px] m-2'>
+					<button className='relative group max-w-[250px] min-h-[50px] m-2'>
 						<a
 							href={PriyaResume}
 							download
-							className='mt-4 group border-2 border-white text-white px-6 py-3 inline-flex items-center gap-2 hover:bg-white hover:text-cyan-700 transition-all duration-300'>
+							className='mt-4 group border-2 rounded-md border-white text-white px-8 md:px-6 py-2 md:py-3 inline-flex items-center gap-2 hover:bg-white hover:text-cyan-700 transition-all duration-300'>
 							<span>Download Resume</span>
-							<span className='opacity-0 transition-all duration-[650ms] ease-out group-hover:opacity-100'>
+							<span>
 								<svg
 									className='fill-current w-4 h-4'
 									xmlns='http://www.w3.org/2000/svg'
@@ -90,7 +90,7 @@ const Home = () => {
 					<aside>
 						<figure>
 							<img
-								className='object-cover rounded-full shadow-2xl aspect-square w-[250px] md:w-[320px] ring-4 ring-white/20'
+								className='object-cover rounded-full shadow-2xl aspect-square w-[200px] md:w-[320px] ring-4 ring-white/20'
 								src={PortfolioImg}
 								alt='Priya Image'
 							/>

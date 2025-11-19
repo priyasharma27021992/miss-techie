@@ -12,7 +12,7 @@ export const COMPLETED_PROJECTS = [
 		description:
 			'Helped my spouse to create some parts of this static website which is used to make ai videos',
 		image: 'ecommerce-page',
-		projectUrl: 'https://lemonpeel.in/',
+		projectUrl: 'https://lemonpeel.ai/',
 	},
 	{
 		name: 'Simple Calculator',
