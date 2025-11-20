@@ -1,5 +1,7 @@
 type SizeUnit = "%" | "px" | "em" | "vh";
 
+export type Image = {src: string, alt?: string}
+
 type ExperienceType = {
   title: string;
   description: string;
@@ -11,7 +13,7 @@ type ExperienceType = {
 type Project = {
       name: string
       description: string
-      image: string,
+      images: Array<Image>,
       projectUrl: string
 }
 

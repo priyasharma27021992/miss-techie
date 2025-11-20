@@ -5,12 +5,13 @@ import {
 	INCOMPLETED_PROJECTS,
 } from '../utils/constants';
 import { Project } from '../types/common';
+import { ImageSlideShow } from '../components/ui/ImageSlideShow';
 
 const PROJECT_COMPLETION_STATUS = {
 	ALL: 'all',
 	COMPLETED: 'completed',
 	IN_PROGRESS: 'in_progress',
-	IN_COMPLETED: 'in_completed',
+	IN_COMPLETED: 'future_undecided',
 } as const;
 
 type ProjectCompletionStatus =
@@ -39,13 +40,13 @@ const Projects = () => {
 	return (
 		<section className='min-h-screen bg-cyan-700 py-16'>
 			<div className='max-w-2xl lg:max-w-7xl px-4 mx-auto'>
-				<h1 className='mb-10 text-3xl sm:text-4xl font-extrabold text-center'>
+				<h1 className='mb-10 text-3xl sm:text-4xl font-extrabold text-center text-white'>
 					Projects at glance
 				</h1>
 				<div className='flex flex-col sm:flex-row gap-4 mb-8'>
 					<label
 						htmlFor='project-category'
-						className='font-semibold text-lg'>
+						className='font-semibold text-lg text-white'>
 						Select Project Category
 					</label>
 					<select
@@ -60,19 +61,15 @@ const Projects = () => {
 					</select>
 				</div>
 				<div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8'>
-					{filteredProjects.map((project) => (
+					{filteredProjects.map((project, i) => (
 						<div
-							key={project.name}
+							key={`${project.name} - Number ${i}`}
 							className='bg-white border-gray-200 rounded-lg shadow-xl transition hover:shadow-2xl p-5'>
-							<img src='' />
 							<a
 								href={project.projectUrl}
 								target='_blank'>
-								<div className='relative w-full h-96'>
-									<iframe
-										src={project.projectUrl}
-										title={project.name}
-										className='w-full h-full border-none'></iframe>
+								<div className='w-full aspect-square shadow-md p-2 m-auto rounded-lg shadow-cyan-700'>
+									<ImageSlideShow images={project.images} />
 								</div>
 								<div className='p-6'>
 									<h5 className='mb-2 text-2xl fond-bold tracking-tight text-gray-900 dark:text-white'>

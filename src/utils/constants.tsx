@@ -1,55 +1,71 @@
+import { Project } from '../types/common';
+
 export const GITHUB_BASE_URL = 'https://priyasharma27021992.github.io';
-export const COMPLETED_PROJECTS = [
+export const COMPLETED_PROJECTS: Array<Project> = [
 	{
 		name: 'Portfolio',
 		description:
 			'Ofcourse, my own portfolio which is made using mainly reactjs, vite, typescript, sass, tailwind. Also, it is in progress',
-		image: 'portfolio',
+		images: [
+			{
+				src: 'images/projects/portfolio.png',
+				alt: 'Portfolio',
+			},
+		],
 		projectUrl: `${GITHUB_BASE_URL}/miss-techie/`,
 	},
 	{
 		name: 'Lemonpeel',
 		description:
 			'Helped my spouse to create some parts of this static website which is used to make ai videos',
-		image: 'ecommerce-page',
+		images: [{ src: 'images/projects/lemonpeel.png', alt: 'Lemonpeel' }],
 		projectUrl: 'https://lemonpeel.ai/',
 	},
 	{
 		name: 'Simple Calculator',
 		description: 'A pretty simple calculator ',
-		image: 'simple-calc',
+		images: [{ src: 'images/projects/simple-calc.png', alt: 'Calculator' }],
 		projectUrl: `${GITHUB_BASE_URL}//simple-calculator/`,
 	},
 	{
 		name: 'Url Shortner',
 		description: 'Fed up with long urls? Use the short ones',
-		image: 'short-url',
+		images: [{ src: 'images/projects/short-url.png', alt: 'Short Url' }],
 		projectUrl: `https://url-shortner-ten-mu.vercel.app/`,
 	},
 ];
 
-export const IN_PROGRESS_PROJECTS = [
+export const IN_PROGRESS_PROJECTS: Array<Project> = [
 	{
 		name: 'Nanhe Khwab',
 		description:
 			'NGO site made from bootstrap, jquery, html, css and hoisted on aws but making it on next.js using taiwind, will just generate a static page',
-		image: 'nanhe-khwab',
+		images: [
+			{ src: 'images/projects/nanhe-khwab/1.png', alt: 'Nanhe Khwab 1' },
+			// { src: 'images/projects/nanhe-khwab/2.png', alt: 'Nanhe Khwab 2' },
+			// { src: 'images/projects/nanhe-khwab/3.png', alt: 'Nanhe Khwab 3' },
+		],
 		projectUrl: 'https://nanhekhwab.in/',
 	},
 	{
 		name: 'Movie Explorer',
 		description: 'Made on next.js using SSR, ISR concepts, uses IMDB api',
-		image: 'movie-explorer',
+		images: [
+			{
+				src: 'images/projects/movie-explorer.jpg',
+				alt: 'Movie Explorer',
+			},
+		],
 		projectUrl: 'https://movie-explorer-six-mu.vercel.app/',
 	},
 ];
 
-export const INCOMPLETED_PROJECTS = [
+export const INCOMPLETED_PROJECTS: Array<Project> = [
 	{
 		name: 'Find My Shoes Ecommerce App',
 		description:
 			'This Shoes ecommerece app is in-progress and made using react mainly',
-		image: 'ecommerce-page',
+		images: [{ src: 'images/projects/ecommerce-page.png', alt: 'E-commerce' }],
 		projectUrl: `${GITHUB_BASE_URL}/ecommerce-app/`,
 	},
 ];
