@@ -23,10 +23,26 @@ export const ImageSlideShow = ({ images = [] }: ImageSlideShowProps) => {
 
 	if (memoizedImages.length === 0) return null;
 	return (
-		<img
-			src={memoizedImages[index].src}
-			className=''
-			alt={`${memoizedImages[index]} Website`}
-		/>
+		<div
+			style={{
+				overflow: 'hidden',
+				width: '100%',
+				height: '100%',
+			}}>
+			<div
+				style={{
+					display: 'flex',
+					transition: 'transform 0.6s ease-in',
+					transform: `translateX(-${index * 100}%)`,
+				}}>
+				{images?.map((image) => (
+					<img
+						src={image.src}
+						alt={`${image.alt} Website`}
+						style={{ width: '100%', flexShrink: 0 }}
+					/>
+				))}
+			</div>
+		</div>
 	);
 };

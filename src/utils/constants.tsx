@@ -42,8 +42,8 @@ export const IN_PROGRESS_PROJECTS: Array<Project> = [
 			'NGO site made from bootstrap, jquery, html, css and hoisted on aws but making it on next.js using taiwind, will just generate a static page',
 		images: [
 			{ src: 'images/projects/nanhe-khwab/1.png', alt: 'Nanhe Khwab 1' },
-			// { src: 'images/projects/nanhe-khwab/2.png', alt: 'Nanhe Khwab 2' },
-			// { src: 'images/projects/nanhe-khwab/3.png', alt: 'Nanhe Khwab 3' },
+			{ src: 'images/projects/nanhe-khwab/2.png', alt: 'Nanhe Khwab 2' },
+			{ src: 'images/projects/nanhe-khwab/3.png', alt: 'Nanhe Khwab 3' },
 		],
 		projectUrl: 'https://nanhekhwab.in/',
 	},
