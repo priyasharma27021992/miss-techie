@@ -11,7 +11,7 @@ const Header = () => {
 		<header>
 			<button
 				className={classNames(
-					'absolute top-10 md:top-20 right-10 md:right-20 w-10 md:w-20 h-4 md:h-16 flex flex-col justify-between curson-pointer z-[1500] transition-transform duration-[650ms] ease-out',
+					'absolute top-10 md:top-20 right-10 md:right-20 w-10 md:w-20 h-4 md:h-16 flex flex-col justify-between curson-pointer z-1500 transition-transform duration-650 ease-out',
 					{
 						'transform -rotate-45': openMobileMenu,
 					}
@@ -19,23 +19,23 @@ const Header = () => {
 				onClick={toggleMenu}>
 				<div
 					className={classNames(
-						'w-1/2 bg-white h-[4px] rounded-xl [transform-origin:right] [transition-timing-function:cubic-bezier(0.54,0.81,0.57,0.57)] transition-transform duration-[650ms]',
+						'w-1/2 bg-white h-1 rounded-xl origin-[right] ease-[cubic-bezier(0.54,0.81,0.57,0.57)] transition-transform duration-650',
 						{
-							'[transform:rotate(-450deg)_translate(0.8rem)]': openMobileMenu,
+							'transform-[rotate(-450deg)_translate(0.8rem)]': openMobileMenu,
 						}
 					)}></div>
-				<div className='w-full bg-white h-[4px] rounded-xl'></div>
+				<div className='w-full bg-white h-1 rounded-xl'></div>
 				<div
 					className={classNames(
-						'w-1/2 flex self-end bg-white h-[4px] rounded-xl [transform-origin:left] [transition-timing-function:cubic-bezier(0.54,0.81,0.57,0.57)] transition-transform duration-[650ms]',
+						'w-1/2 flex self-end bg-white h-1 rounded-xl origin-[left] ease-[cubic-bezier(0.54,0.81,0.57,0.57)] transition-transform duration-650',
 						{
-							'[transform:rotate(-450deg)_translate(-0.8rem)]': openMobileMenu,
+							'transform-[rotate(-450deg)_translate(-0.8rem)]': openMobileMenu,
 						}
 					)}></div>
 			</button>
 			<nav
 				className={classNames(
-					'w-screen fixed z-50 bg-black/80 transition-all duration-[650ms] [transition-timing-function:cubic-bezier(1,0,0,1)]',
+					'w-screen fixed z-50 bg-black/80 transition-all duration-650 ease-[cubic-bezier(1,0,0,1)]',
 					{ 'top-0': openMobileMenu },
 					{ 'top-[-100vh] rounded-b-full': !openMobileMenu }
 				)}>

@@ -7,9 +7,9 @@ const Experiences = () => {
 			<div className='max-w-4xl mx-auto py-[80px] px-6 h-auto'>
 				{JOB_EXPERIENCES?.map((exp: ExperienceType) => (
 					<>
-						<div className='grid grid-cols-1 md:grid-cols-2 gap-6 mb-10 animate-fadeInLeftToRight relative'>
+						<div className='grid grid-cols-1 md:grid-cols-2 gap-6 mb-10 animate-fade-in-left-to-right relative'>
 							{/* left content */}
-							<div className='text-right mr-5 rounded-md p-2 md:p-5 shadow-sm shadow-white'>
+							<div className='text-right mr-5 rounded-md p-2 md:p-5 shadow-xs shadow-white'>
 								<p className='text-white'>{exp?.title}</p>
 								<p className='text-gray-200 text-sm md:text-base'>
 									{exp?.description}
