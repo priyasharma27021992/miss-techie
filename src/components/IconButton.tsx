@@ -1,27 +1,26 @@
-import classNames from "classnames";
+import classNames from 'classnames';
 
 type IconButtonProps = {
-  children: React.ReactNode;
-  href?: string;
-  iconClassName?: string;
+	children: React.ReactNode;
+	href?: string;
+	iconClassName?: string;
 };
 
 export const IconButton = ({
-  children,
-  href,
-  iconClassName,
+	children,
+	href,
+	iconClassName,
 }: IconButtonProps) => {
-  return (
-    <a
-      className={classNames(
-        "bg-[#fafaff] rounded-[2.6rem] text-[1.3rem] w-[2.6rem] h-[2.6rem] my-[2px] mx-[5px] relative cursor-pointer flex flex-row justify-center items-center",
-        iconClassName
-      )}
-      href={href}
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      {children}
-    </a>
-  );
+	return (
+		<a
+			className={classNames(
+				'bg-[#fafaff] rounded-full text-xl sm:text-2xl md:text-3xl w-8 h-8 md:w-[2.6rem] md:h-[2.6rem] m-0.5 relative cursor-pointer flex flex-row justify-center items-center',
+				iconClassName
+			)}
+			href={href}
+			target='_blank'
+			rel='noopener noreferrer'>
+			{children}
+		</a>
+	);
 };

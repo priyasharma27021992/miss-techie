@@ -32,7 +32,6 @@ const Home = () => {
 								<FontAwesomeIcon
 									icon={faInstagram}
 									aria-label='instagram'
-									size='lg'
 								/>
 							}
 							href='https://www.instagram.com/trippygirl2702'
