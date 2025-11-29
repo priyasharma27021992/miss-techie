@@ -20,6 +20,8 @@
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true
   },
-  "include": ["src"],
-  "references": [{ "path": "./tsconfig.node.json" }]
+  "include": ["src", "./tests/setup.ts"],
+  "references": [{ "path": "./tsconfig.node.json" }],
+
+   "types": ["vitest/globals"],
 }

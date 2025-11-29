@@ -16,7 +16,8 @@ const Header = () => {
 						'transform -rotate-45': openMobileMenu,
 					}
 				)}
-				onClick={toggleMenu}>
+				onClick={toggleMenu}
+				data-testid='hamburger'>
 				<div
 					className={classNames(
 						'w-1/2 bg-white h-1 rounded-xl origin-[right] ease-[cubic-bezier(0.54,0.81,0.57,0.57)] transition-transform duration-650',
