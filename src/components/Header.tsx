@@ -11,7 +11,7 @@ const Header = () => {
 		<header>
 			<button
 				className={classNames(
-					'absolute top-10 md:top-20 right-10 md:right-20 w-10 md:w-20 h-4 md:h-16 flex flex-col justify-between curson-pointer z-1500 transition-transform duration-650 ease-out',
+					'absolute top-10 md:top-20 right-10 md:right-20 w-10 md:w-20 h-4 md:h-16 flex flex-col justify-between curson-pointer z-1500 transition-transform duration-650 ease-out cursor-pointer',
 					{
 						'transform -rotate-45': openMobileMenu,
 					}
@@ -42,30 +42,30 @@ const Header = () => {
 				)}>
 				<ul
 					className={classNames(
-						'list-none w-screen md:w-[80%] m-auto h-screen flex flex-col md:flex-row flex-wrap justify-evenly md:justify-center lg:justify-between items-center text-white text-4xl md:text-6xl font-bold'
+						'list-none w-screen md:w-[80%] m-auto h-screen flex flex-col md:flex-row flex-wrap justify-evenly md:justify-center lg:justify-between items-center text-white text-4xl md:text-5xl font-bold'
 					)}>
-					<li>
+					<li className='hover:opacity-30 hover:underline'>
 						<Link
 							to='/'
 							onClick={toggleMenu}>
 							Home
 						</Link>
 					</li>
-					<li>
+					<li className='hover:opacity-30 hover:underline'>
 						<Link
 							to='/projects'
 							onClick={toggleMenu}>
 							Projects
 						</Link>
 					</li>
-					<li>
+					<li className='hover:opacity-30 hover:underline'>
 						<Link
 							to='/contact'
 							onClick={toggleMenu}>
 							Contact
 						</Link>
 					</li>
-					<li>
+					<li className='hover:opacity-30 hover:underline'>
 						<Link
 							to='/job-experiences'
 							onClick={toggleMenu}>

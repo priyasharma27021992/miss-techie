@@ -68,7 +68,7 @@ const Projects = () => {
 							<a
 								href={project.projectUrl}
 								target='_blank'>
-								<div className='w-full aspect-square shadow-md p-2 m-auto rounded-lg shadow-cyan-700'>
+								<div className='w-full aspect-square shadow-md p-2 m-auto rounded-lg shadow-cyan-700 hover:-translate-y-1 focus-within:-translate-y-1 transition-all duration-300 ease-in'>
 									<ImageSlideShow images={project.images} />
 								</div>
 								<div className='p-6'>
