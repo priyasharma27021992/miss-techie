@@ -22,6 +22,18 @@ export const COMPLETED_PROJECTS: Array<Project> = [
 		projectUrl: 'https://lemonpeel.ai/',
 	},
 	{
+		name: 'Nanhe Khwab Donations',
+		description:
+			'Created a donation special page mainly for Christmas to give the donors options',
+		images: [
+			{
+				src: 'images/projects/nanhe-khwab-donations.png',
+				alt: 'Nanhe Khwab Donations',
+			},
+		],
+		projectUrl: 'https://nanhe-khwab-donation-page.netlify.app/',
+	},
+	{
 		name: 'Simple Calculator',
 		description: 'A pretty simple calculator ',
 		images: [{ src: 'images/projects/simple-calc.png', alt: 'Calculator' }],

@@ -1,6 +1,5 @@
 import PortfolioImg from '../assets/portfolio-priya.jpg';
 
-import '../styles/pure-particle.scss';
 import PriyaResume from '../assets/Priya_Sharma_Resume_EU_2025.pdf';
 import { IconButton } from '../components/IconButton';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
