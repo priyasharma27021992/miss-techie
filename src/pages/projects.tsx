@@ -6,18 +6,16 @@ import {
 } from '../utils/constants';
 import { Project } from '../types/common';
 import { ImageSlideShow } from '../components/ui/ImageSlideShow';
+import { DropdownSelect } from '../components/ui/DropdownSelect';
 
 const PROJECT_COMPLETION_STATUS = {
-	ALL: 'all',
-	COMPLETED: 'completed',
-	IN_PROGRESS: 'in_progress',
-	IN_COMPLETED: 'future_undecided',
-} as const;
+	ALL: 'ALL',
+	COMPLETED: 'COMPLETED',
+	IN_PROGRESS: 'IN_PROGRESS',
+	IN_COMPLETED: 'IN_COMPLETED',
+};
 
-type ProjectCompletionStatus =
-	(typeof PROJECT_COMPLETION_STATUS)[keyof typeof PROJECT_COMPLETION_STATUS];
-
-const PROJECT_OPTIONS: Record<ProjectCompletionStatus, Array<Project>> = {
+const PROJECT_OPTIONS: Record<string, Array<Project>> = {
 	[PROJECT_COMPLETION_STATUS.ALL]: [
 		...COMPLETED_PROJECTS,
 		...IN_PROGRESS_PROJECTS,
@@ -29,8 +27,9 @@ const PROJECT_OPTIONS: Record<ProjectCompletionStatus, Array<Project>> = {
 };
 
 const Projects = () => {
-	const [selectedCategory, setSelectedCategory] =
-		useState<ProjectCompletionStatus>(PROJECT_COMPLETION_STATUS.ALL);
+	const [selectedCategory, setSelectedCategory] = useState<string>(
+		PROJECT_COMPLETION_STATUS.ALL
+	);
 
 	const filteredProjects = useMemo(
 		() => PROJECT_OPTIONS[selectedCategory],
@@ -49,16 +48,11 @@ const Projects = () => {
 						className='font-semibold text-lg text-white'>
 						Select Project Category
 					</label>
-					<select
-						id='project-category'
-						className='capitalize border border-gray-300 px-3 py-2 rounded-md text-gray-700'
-						onChange={(e) =>
-							setSelectedCategory(e.target.value as ProjectCompletionStatus)
-						}>
-						{Object.values(PROJECT_COMPLETION_STATUS).map((option) => (
-							<option value={option}>{option.split('_').join(' ')}</option>
-						))}
-					</select>
+					<DropdownSelect
+						options={Object.keys(PROJECT_COMPLETION_STATUS)}
+						onSelectCategory={setSelectedCategory}
+						selectedCategory={selectedCategory}
+					/>
 				</div>
 				<div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8'>
 					{filteredProjects.map((project, i) => (
